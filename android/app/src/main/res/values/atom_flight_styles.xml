@@ -1,0 +1,816 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="atom_flight_myStyle_OliveNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#52d6db</item>
+    </style>
+    <!-- 字体sytle定义 start ↓ -->
+    <style name="atom_flight_myStyle_WhiteSmartSmallText" parent="android:Widget">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_WhiteText_11" parent="android:Widget">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_WhiteSmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_WhiteBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Blue11Text" parent="android:Widget">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Blue10Text" parent="android:Widget">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlueSmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlueSmallText_new" parent="android:Widget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#00bcd4</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlueText_13" parent="android:Widget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlueNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlueBoldBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="atom_flight_myStyle_CommonGreenSmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#02bb62</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlueHugeText" parent="android:Widget">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackContentTitleText" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_212121_34pt" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <style name="atom_flight_myStyle_FlightStatusSearchInput" parent="android:Widget">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlueContentText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textColorHint">#c7ced4</item>
+    </style>
+
+    <style name="atom_flight_myStyle_GrayBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#7f8081</item>
+    </style>
+
+    <style name="atom_flight_myStyle_tax_hint" parent="android:Widget">
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#7f8081</item>
+    </style>
+
+
+    <style name="atom_flight_myStyle_GrayNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#7f8081</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackSuperBigText" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+
+    <style name="atom_flight_myStyle_WhiteSuperHugeText" parent="android:Widget">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_WhiteNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_WhiteContentTitleText" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_WhiteHugeText" parent="android:Widget">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepGrayBiggerText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepGrayNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackSmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackNormalSmallText" parent="android:Widget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackSmallOneText" parent="android:Widget">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_212121_19dp" parent="android:Widget">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <style name="atom_flight_myStyle_212121_15dp" parent="android:Widget">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <style name="atom_flight_myStyle_212121_14dp" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <style name="atom_flight_myStyle_212121_30pt" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <style name="atom_flight_myStyle_212121_18dp" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <style name="atom_flight_myStyle_LightBlack13DPText" parent="android:Widget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#616161</item>
+    </style>
+
+    <style name="atom_flight_myStyle_LightBlack12DPText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#616161</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Black15DPText" parent="android:Widget">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Black22DPText" parent="android:Widget">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_recommend_title" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_recommend_sub_title" parent="android:Widget">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_recommend_unit_20pt" parent="android:Widget">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+    <style name="atom_flight_myStyle_recommend_unit" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+    <style name="atom_flight_myStyle_recommend_price" parent="android:Widget">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+    <style name="atom_flight_myStyle_GraySmallFont" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Gray13DPFont" parent="android:Widget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Gray20PTText" parent="android:Widget">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Gray14PTText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackBoldBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="atom_flight_myStyle_comment_BlackText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_OtaList_Name_BlackText" parent="android:Widget">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackSuperHuge1Text" parent="android:Widget">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Black32DPText" parent="android:Widget">
+        <item name="android:textSize">32dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Black28DPText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepOrangeSmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#FF4400</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepOrangeVerySmallText" parent="android:Widget">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#FF4400</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepOrangeContentTitleText" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#FF4400</item>
+    </style>
+
+    <style name="atom_flight_myStyle_slightOrangeContentTitleText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#ff6108</item>
+    </style>
+
+    <style name="atom_flight_myStyle_slightOrangeHugeText" parent="android:Widget">
+        <item name="android:textSize">26dp</item>
+        <item name="android:textColor">#ff9705</item>
+    </style>
+
+    <style name="atom_flight_myStyle_slightOrangeNormalText" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#ff9705</item>
+    </style>
+
+    <style name="atom_flight_myStyle_slightOrangeSmallText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ff9705</item>
+    </style>
+
+    <style name="atom_flight_myStyle_GraySmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#7f8081</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackHugeText" parent="android:Widget">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+
+
+
+    <style name="atom_flight_myStyle_BlueBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+    </style>
+
+    <style name="atom_flight_BlueText_26DP" parent="android:Widget">
+        <item name="android:textSize">26dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+    </style>
+
+    <style name="atom_flight_myStyle_RedNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+    <style name="atom_flight_myStyle_RedBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+
+
+    <style name="atom_flight_myStyle_OrangeNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ff3300</item>
+    </style>
+
+    <style name="atom_flight_myStyle_OrangeBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#ff3300</item>
+    </style>
+
+    <style name="atom_flight_myStyle_OrangeHugeText" parent="android:Widget">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#ff3300</item>
+    </style>
+
+    <style name="atom_flight_myStyle_OrangeSuperHugeText" parent="android:Widget">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">#ff3300</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepOrangeBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#FF4400</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepOrangeTinyText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#ff3300</item>
+    </style>
+
+    <style name="atom_flight_myStyle_GrayContentTitleText" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#7f8081</item>
+    </style>
+
+    <style name="atom_flight_myStyle_RedTinyText" parent="android:Widget">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+    <style name="atom_flight_myStyle_GrayTinyText" parent="android:Widget">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#7f8081</item>
+    </style>
+
+
+
+    <style name="atom_flight_myStyle_EditTextBottomTip" parent="android:Widget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#ff1200</item>
+    </style>
+
+    <style name="atom_flight_myStyle_ff1200_12dp" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#ff1200</item>
+    </style>
+
+
+
+    <style name="atom_flight_DivideLineH_Dashed" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="atom_flight_DivideLineH_DashedNoMargin" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+    <!-- IOS7 ButtonBlueStyle -->
+    <!-- 支付成功页头文字样式 -->
+    <style name="atom_flight_ios7Style_paySuccessSmalltext" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="atom_flight_ios7Style_lightGrayText_11" parent="android:Widget">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="atom_flight_ios7Style_lightGraySmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="atom_flight_ios7Style_lightGrayCommonText" parent="android:Widget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="atom_flight_big_title" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <!-- OTA头信息文字 60%白色透明度样式 -->
+
+
+
+    <style name="atom_flight_myStyle_RedSmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepOrangeNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#FF4400</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepOrangeHugeText" parent="android:Widget">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FF4400</item>
+    </style>
+
+    <style name="atom_flight_myStyle_GreenBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#27AAAF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_OrangeContentTitleText" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#ff3300</item>
+    </style>
+
+    <style name="atom_flight_myStyle_GreenSmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#27AAAF</item>
+    </style>
+
+    <style name="atom_flight_myStyle_WhiteSuperLargeHugeText" parent="android:Widget">
+        <item name="android:textSize">40dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+
+    <style name="atom_flight_myStyle_RedContentTitleText" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+
+    <!-- 个人中心，文字样式 -->
+    <style name="atom_flight_ios7Style_lightGrayNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlueContentTitleText" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#1ba9ba</item>
+    </style>
+
+    <style name="atom_flight_myStyle_RedMostHugeText" parent="android:Widget">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepGraySmallText" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="atom_flight_myStyle_DeepGray13DPText" parent="android:Widget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="atom_flight_myStyle_GrayHugeText" parent="android:Widget">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#7f8081</item>
+    </style>
+
+    <style name="atom_flight_myStyle_GrayText" parent="android:Widget">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#c7ced4</item>
+    </style>
+
+
+    <style name="atom_flight_myStyle_DeepBlueBigText" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#679dbc</item>
+    </style>
+
+    <style name="atom_flight_myStyle_RedSuperHugeText" parent="android:Widget">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+    <style name="atom_flight_myStyle_BlackSuperHugeText" parent="android:Widget">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_myStyle_Black44PTText" parent="android:Widget">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_MyDialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!-- 中转城市说明字体颜色 用于蓝色背景下 -->
+    <style name="atom_flight_myStyle_TrainsferBlueNormalText" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ff77ffff</item>
+    </style>
+
+
+    <style name="atom_flight_DivideLineH">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="atom_flight_DivideLineH_samall_Gray">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#c7ced4</item>
+    </style>
+
+
+
+    <style name="atom_flight_DivideLineV">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1dp</item>
+    </style>
+
+
+
+    <style name="atom_flight_MyDialog2">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <!-- 酒店特惠 -->
+    <style name="atom_flight_countDownText" parent="android:Widget">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">#ff3300</item>
+    </style>
+
+
+
+    <style name="atom_flight_WhiteSuperBigHugeText">
+        <item name="android:textSize">35dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="atom_flight_BlackSuperBigHugeText">
+        <item name="android:textSize">35dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_ota_timeText">
+        <item name="android:textSize">28dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="atom_flight_PopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+
+    <style name="atom_flight_gray_background_white_font_normal" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#9db0b2</item>
+    </style>
+
+    <style name="atom_flight_notice_dot">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">8dp</item>
+    </style>
+
+    <style name="atom_flight_dialog_fullscreen" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="atom_flight_notice_closeview_style">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+    <style name="atom_flight_mixway_list_style">
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:layout_marginBottom">52dp</item>
+    </style>
+
+    <style name="atom_flight_flight_helper">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <style name="atom_flight_myStyle_c2b_recommend_price_symbol_small" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+    <style name="atom_flight_myStyle_OrangeSmartSmallText" parent="android:Widget">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+
+    <style name="atom_flight_myStyle_c2b_recommend_rate_small" parent="android:Widget">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+
+    <style name="atom_flight_myStyle_text_orange_12" parent="android:Widget">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+    <style name="atom_flight_myStyle_text_orange_13" parent="android:Widget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+    <style name="atom_flight_myStyle_text_orange_14" parent="android:Widget">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+    <style name="atom_flight_myStyle_text_orange_15" parent="android:Widget">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+    <style name="atom_flight_myStyle_text_orange_16" parent="android:Widget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+    <style name="atom_flight_myStyle_text_orange_18" parent="android:Widget">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#ff8205</item>
+    </style>
+
+
+    <style name="atom_flight_style_card_listview">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:dividerHeight">10dp</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+
+    <style name="atom_flight_simple_dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="atom_flight_pop_dialog" parent="@android:style/Animation.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="atom_flight_passport_scan_confirm_cell" parent="android:Widget">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="atom_flight_passport_scan_confirm_cell_left" parent="atom_flight_passport_scan_confirm_cell">
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="atom_flight_passport_scan_confirm_cell_right" parent="atom_flight_passport_scan_confirm_cell">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+
+    <style name="atom_flight_myStyle_212121_32pt" parent="android:Widget">
+        <item name="android:textSize">21dp</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+
+
+    <style name="atom_flight_member_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowIsFloating">false</item>
+
+    </style>
+
+    <style name="atom_flight_include_city_margin_15">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="atom_flight_lucky_money_desc_center">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#d18234</item>
+        <item name="android:maxWidth">215dp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="atom_flight_react_noTitle_Translucent" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+</resources>
