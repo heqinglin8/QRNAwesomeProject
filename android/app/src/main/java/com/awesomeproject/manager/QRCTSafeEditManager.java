@@ -1,5 +1,7 @@
-package com.awesomeproject;
+package com.awesomeproject.manager;
 
+import com.awesomeproject.QRCTSafeEditEvent;
+import com.awesomeproject.SafeEditText;
 import com.facebook.react.common.MapBuilder;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;

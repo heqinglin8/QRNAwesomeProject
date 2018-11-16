@@ -1,5 +1,7 @@
 package com.awesomeproject;
 
+import com.awesomeproject.manager.QRCTEditManager;
+import com.awesomeproject.manager.QRCTSafeEditManager;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -17,6 +19,7 @@ public class FRNReactPackage implements ReactPackage {
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         List<ViewManager> viewManagerList=new ArrayList<>();
         viewManagerList.add(new QRCTSafeEditManager());
+        viewManagerList.add(new QRCTEditManager());
 //        viewManagerList.add(new QReactTextInputManager());
         return viewManagerList;
 
