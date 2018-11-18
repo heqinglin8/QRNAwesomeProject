@@ -21,7 +21,7 @@ public class QEditText extends EditText {
     }
 
     private void init(Context context) {
-        Toast.makeText(context, "QEditText初始化", Toast.LENGTH_SHORT);
+        Toast.makeText(context, "QEditText初始化", Toast.LENGTH_SHORT).show();
         this.mContext = context;
         setListener();
     }
@@ -30,10 +30,14 @@ public class QEditText extends EditText {
         setOnFocusChangeListener(new OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-                String text = b ? "获得焦点" : "失去焦点";
-                Toast.makeText(mContext, text, Toast.LENGTH_SHORT);
+//                String text = b ? "获得焦点" : "失去焦点";
+//                Toast.makeText(mContext, text, Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public void toast(int commandId){
+        Toast.makeText(mContext, "收到命令了 commandId:"+commandId, Toast.LENGTH_SHORT).show();
     }
 
 }

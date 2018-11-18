@@ -8,9 +8,7 @@
 
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View,TextInput } from 'react-native';
-// var requireNativeComponent = require('requireNativeComponent');
-// var QRCTSafeEdit = requireNativeComponent('QRCTSafeEdit');
-import SafeTextInput from './SafeTextInput';
+import QTextInput from './view/QTextInput';
 import { Keyboard,TouchableOpacity } from 'react-native'
 
 const instructions = Platform.select({
@@ -67,7 +65,7 @@ export default class App extends Component<Props> {
               returnKeyType={'done'}
           />
 
-            <SafeTextInput
+            <QTextInput
               style={[styles.input]}
               label=''
               name='cardNo'
