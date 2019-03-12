@@ -1,5 +1,7 @@
 package com.awesomeproject.manager;
 
+import android.widget.Toast;
+
 import com.awesomeproject.QEditText;
 import com.awesomeproject.QRCTSafeEditEvent;
 import com.awesomeproject.SafeEditText;
@@ -44,5 +46,6 @@ public class QRCTEditManager extends SimpleViewManager<QEditText> {
     @Override
     public void receiveCommand(QEditText root, int commandId, @Nullable ReadableArray args) {
         super.receiveCommand(root, commandId, args);
+        root.toast(commandId);
     }
 }
