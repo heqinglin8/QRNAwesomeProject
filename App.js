@@ -12,7 +12,7 @@ import { Platform, StyleSheet, Text, View,TextInput } from 'react-native';
 // var QRCTSafeEdit = requireNativeComponent('QRCTSafeEdit');
 // import SafeTextInput from './SafeTextInput';
 import { Keyboard,TouchableOpacity } from 'react-native';
-import AIText from './AIText'
+import QText from './QText'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -25,7 +25,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <AIText style={ {fontSize:24} }> 徐爽 hello</AIText>
+      <QText style={ {fontSize:30} }> 徐爽 hello</QText>
         <TouchableOpacity onPress={this.onSelectCertificate.bind(this)}>
         <Text style={styles.welcome} >点击关闭键盘</Text>
         <Text style={styles.welcome} >welcome to</Text>
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   welcome: {
-    fontSize: isAndroid ? 50 * 0.9 : 50,
+    fontSize: isAndroid ? 30 * 0.9 : 30,
     color:'#212121',
     textAlign: 'center',
     margin: 10,
