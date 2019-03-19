@@ -12,7 +12,7 @@ import { Platform, StyleSheet, Text, View,TextInput } from 'react-native';
 // var QRCTSafeEdit = requireNativeComponent('QRCTSafeEdit');
 // import SafeTextInput from './SafeTextInput';
 import { Keyboard,TouchableOpacity } from 'react-native';
-import QText from './QText'
+import QText from './src/view/QText'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
