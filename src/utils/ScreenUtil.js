@@ -35,16 +35,18 @@ const _scaleHeight = screenH / defaultHeight;
 const X_WIDTH = 375;
 const X_HEIGHT = 812;
 
-/**
+export default {
+
+   /**
  * 屏幕适配,缩放size , 默认根据宽度适配，纵向也可以使用此方法
  * 横向的尺寸直接使用此方法
  * 如：width ,paddingHorizontal ,paddingLeft ,paddingRight ,marginHorizontal ,marginLeft ,marginRight
  * @param size 设计图的尺寸
  * @returns {number}
  */
-export function scaleSize(size: Number) {
+ scaleSize(size: Number) {
     return size * _scaleWidth;
-}
+},
 
 /**
  * 屏幕适配 , 纵向的尺寸使用此方法应该会更趋近于设计稿
@@ -52,9 +54,9 @@ export function scaleSize(size: Number) {
  * @param size 设计图的尺寸
  * @returns {number}
  */
-export function scaleHeight(size: Number) {
+ scaleHeight(size: Number) {
     return size * _scaleHeight;
-}
+},
 
 /* 最初版本尺寸适配方案 也许你会更喜欢这个
 export function scaleSize(size: Number) {
@@ -70,32 +72,32 @@ export function scaleSize(size: Number) {
  * @param size 传入设计稿上的px , allowFontScaling 是否根据设备文字缩放比例调整，默认不会
  * @returns {Number} 返回实际sp
  */
-function setSpText(size: Number, allowFontScaling = false) {
+ setSpText(size: Number, allowFontScaling = false) {
     const scale = Math.min(_scaleWidth, _scaleHeight);
     const fontSize = allowFontScaling ? 1 : fontScale;
     return size * scale / fontSize;
-}
+},
 
-export function setSpText2(size: Number) {
+ setSpText2(size: Number) {
     let scaleWidth = screenW / w2;
     let scaleHeight = screenH / h2;
     let scale = Math.min(scaleWidth, scaleHeight);
     size = Math.round((size * scale + 0.5));
 
     return size / DEFAULT_DENSITY * fontScale;
-}
+},
 
 /**
  * 判断是否为iphoneX
  * @returns {boolean}
  */
-export function isIphoneX() {
+ isIphoneX() {
     return (
         Platform.OS === 'ios' &&
         ((screenH === X_HEIGHT && screenW === X_WIDTH) ||
             (screenH === X_WIDTH && screenW === X_HEIGHT))
     )
-}
+},
 
 /**
  * 根据是否是iPhoneX返回不同的样式
@@ -104,7 +106,7 @@ export function isIphoneX() {
  * @param androidStyle
  * @returns {*}
  */
-export function ifIphoneX(iphoneXStyle, iosStyle = {}, androidStyle) {
+ ifIphoneX(iphoneXStyle, iosStyle = {}, androidStyle) {
     if (isIphoneX()) {
         return iphoneXStyle;
     } else if (Platform.OS === 'ios') {
@@ -113,7 +115,7 @@ export function ifIphoneX(iphoneXStyle, iosStyle = {}, androidStyle) {
         if (androidStyle) return androidStyle;
         return iosStyle
     }
-}
+},
 
 
 /**
@@ -121,7 +123,7 @@ export function ifIphoneX(iphoneXStyle, iosStyle = {}, androidStyle) {
  * @param str  (null|undefined|''|'   '|[]|{}) 均判断为空，返回true
  * @returns {boolean}
  */
-export function isEmpty(str) {
+ isEmpty(str) {
     if (!str) {
         return true;
     } else if (typeof str === 'object' && Object.keys(str).length === 0) {
@@ -130,33 +132,10 @@ export function isEmpty(str) {
         return true;
     }
     return false;
-}
-
-//时间处理
-Date.prototype.format = function (format) {
-    let date = {
-        "M+": this.getMonth() + 1,
-        "d+": this.getDate(),
-        "h+": this.getHours(),
-        "m+": this.getMinutes(),
-        "s+": this.getSeconds(),
-        "q+": Math.floor((this.getMonth() + 3) / 3),
-        "S+": this.getMilliseconds()
-    };
-    if (/(y+)/i.test(format)) {
-        format = format.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length));
-    }
-    for (let k in date) {
-        if (new RegExp("(" + k + ")").test(format)) {
-            format = format.replace(RegExp.$1, RegExp.$1.length === 1
-                ? date[k] : ("00" + date[k]).substr(("" + date[k]).length));
-        }
-    }
-    return format;
-};
+},
 
 //获取时间差 current:1497235409744 当前时间  start:1497235419744 开始时间
-export function getRemainingime(current: Number, start: Number) {
+ getRemainingime(current: Number, start: Number) {
 
     let time = start - current;
     if (time < 0) {
@@ -176,10 +155,10 @@ export function getRemainingime(current: Number, start: Number) {
 
     let strs = [year, toNormal(month), toNormal(days), toNormal(hours), toNormal(minutes), toNormal(seconds)];
     return strs;//["0", "0", "2", "7", "33", "30"]0年0月2日 7时33分30秒
-}
+},
 
 //1497235419
-export function getRemainingimeDistance(distance: Number) {
+ getRemainingimeDistance(distance: Number) {
     let time = distance * 1000;
     if (time < 0) {
         return ["0", "0", "0", "0", "0", "0"];
@@ -205,14 +184,14 @@ export function getRemainingimeDistance(distance: Number) {
     // strs.splice(4, 1, Number(strs[4]) < 10 ? '0' + Number(strs[4]) : String(Number(strs[4])));
     // strs.splice(5, 1, Number(strs[5]) < 10 ? '0' + Number(strs[5]) : String(Number(strs[5])));
     return strs;//["0", "0", "2", "7", "33", "30"]0年0月2日 7时33分30秒
-}
+},
 
-export function toNormal(time: Number) {
+ toNormal(time: Number) {
     return time >= 10 ? time : '0' + time;
-}
+},
 
 //转换成日期
-export function toDate(timestamp: Number, format1 = 'yyyy-MM-dd hh:mm:ss') {
+ toDate(timestamp: Number, format1 = 'yyyy-MM-dd hh:mm:ss') {
     try {
         if (timestamp > 10000) {
             let date = new Date();
@@ -225,16 +204,16 @@ export function toDate(timestamp: Number, format1 = 'yyyy-MM-dd hh:mm:ss') {
         return '';
     }
     return '';
-}
+},
 
 //转换成时间搓
-export function toTimestamp(date: String) {
+ toTimestamp(date: String) {
     let timestamp = Date.parse(date);
     return timestamp / 1000;  // 1497233827569/1000
-}
+},
 
 //CST时间=>转换成日期yyyy-MM-dd hh:mm:ss
-export function getTaskTime(strDate) {
+ getTaskTime(strDate) {
     if (null == strDate || "" == strDate) {
         return "";
     }
@@ -253,10 +232,10 @@ export function getTaskTime(strDate) {
     second = second < 10 ? ('0' + second) : second;
 
     return y + "-" + m + "-" + d + " " + h + ":" + minute + ":" + second;
-};
+},
 
 //1497235419
-export function getRemainingimeDistance2(distance: Number) {
+ getRemainingimeDistance2(distance: Number) {
     let time = distance;
     let days = Math.floor(time / (24 * 3600 * 1000));
     let temp1 = time % (24 * 3600 * 1000);
@@ -269,7 +248,7 @@ export function getRemainingimeDistance2(distance: Number) {
     let temp3 = temp2 % (60 * 1000);
     let seconds = Math.round(temp3 / 1000);
     return [hours, minutes];//["0", "0", "2", "7", "33", "30"]0年0月2日 7时33分30秒
-}
+},
 
 
 /**
@@ -279,7 +258,7 @@ export function getRemainingimeDistance2(distance: Number) {
  * @param successCallback
  * @param errorCallback
  */
-export function saveAsyncStorage(key, value, successCallback, errorCallback) {
+ saveAsyncStorage(key, value, successCallback, errorCallback) {
     AsyncStorage.setItem(key, value, error => {
         if (error) {
             errorCallback(error);
@@ -288,7 +267,7 @@ export function saveAsyncStorage(key, value, successCallback, errorCallback) {
             successCallback();
         }
     })
-}
+},
 
 /**
  * 取值
@@ -296,7 +275,7 @@ export function saveAsyncStorage(key, value, successCallback, errorCallback) {
  * @param successCallback
  * @param errorCallback
  */
-export function getAsyncStorage(key, successCallback, errorCallback) {
+ getAsyncStorage(key, successCallback, errorCallback) {
     AsyncStorage.getItem(key, (error, result) => {
         if (error) {
             errorCallback(error);
@@ -305,7 +284,7 @@ export function getAsyncStorage(key, successCallback, errorCallback) {
             successCallback(result);
         }
     })
-}
+},
 
 /**
  * 删除对应key的
@@ -313,7 +292,7 @@ export function getAsyncStorage(key, successCallback, errorCallback) {
  * @param successCallback
  * @param errorCallback
  */
-export function removeAsyncStorage(key, successCallback, errorCallback) {
+ removeAsyncStorage(key, successCallback, errorCallback) {
     AsyncStorage.getItem(key, error => {
         if (error) {
             errorCallback(error);
@@ -324,6 +303,31 @@ export function removeAsyncStorage(key, successCallback, errorCallback) {
     })
 }
 
+}
+
+
+//时间处理
+Date.prototype.format = function (format) {
+    let date = {
+        "M+": this.getMonth() + 1,
+        "d+": this.getDate(),
+        "h+": this.getHours(),
+        "m+": this.getMinutes(),
+        "s+": this.getSeconds(),
+        "q+": Math.floor((this.getMonth() + 3) / 3),
+        "S+": this.getMilliseconds()
+    };
+    if (/(y+)/i.test(format)) {
+        format = format.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length));
+    }
+    for (let k in date) {
+        if (new RegExp("(" + k + ")").test(format)) {
+            format = format.replace(RegExp.$1, RegExp.$1.length === 1
+                ? date[k] : ("00" + date[k]).substr(("" + date[k]).length));
+        }
+    }
+    return format;
+}
 //
 // // 将当前时间换成时间格式字符串
 // var timestamp3 = 1403058804;

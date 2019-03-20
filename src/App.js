@@ -7,13 +7,15 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View,TextInput } from 'react-native';
+import { Platform, StyleSheet, Text, View,TextInput,PixelRatio } from 'react-native';
 // var requireNativeComponent = require('requireNativeComponent');
 // var QRCTSafeEdit = requireNativeComponent('QRCTSafeEdit');
 // import SafeTextInput from './SafeTextInput';
 import { Keyboard,TouchableOpacity } from 'react-native';
-import QText from './src/view/QText'
+import QText from './view/QText'
+import ScreenUtil from './utils/ScreenUtil';
 
+console.log('hql','ScreenUtil=',ScreenUtil);
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -38,6 +40,17 @@ export default class App extends Component {
         >To get started, edit App.js</Text>
         </TouchableOpacity>
         <Text style={styles.instructions}>{instructions}</Text>
+
+        <Text style={{fontSize: 30}}>没适配,本机像素：{PixelRatio.get()}</Text>
+                <Text style={{fontSize: ScreenUtil.setSpText(30)}}>已适配</Text>
+                <View style={{
+                    height: 50, width: 240, backgroundColor: 'green'
+                }}></View>
+                <View style={{
+                    height: ScreenUtil.scaleSize(50),
+                    width: ScreenUtil.scaleSize(240),
+                    backgroundColor: 'red'
+                }}></View>
 
            {/* <TextInput
               style={[styles.input]}
