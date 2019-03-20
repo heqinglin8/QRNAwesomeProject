@@ -1,11 +1,19 @@
 /**
- * zhuoyuan93@gmail.com
+ * 
  * 屏幕工具类 以及一些常用的工具类封装
  * ui设计基准,iphone 6 2倍图
  * width:750px
  * height:1334px
  * @2x
+ * 设备的像素密度，例如：
+ * PixelRatio.get() === 1          mdpi Android 设备 (160 dpi)
+ * PixelRatio.get() === 1.5        hdpi Android 设备 (240 dpi)
+ * PixelRatio.get() === 2          iPhone 4, 4S,iPhone 5, 5c, 5s,iPhone 6,xhdpi Android 设备 (320 dpi)
+ * PixelRatio.get() === 3          iPhone 6 plus , xxhdpi Android 设备 (480 dpi)
+ * PixelRatio.get() === 3.5        Nexus 6  
+ * 
  */
+
 import {
     PixelRatio,
     Dimensions,
@@ -21,7 +29,7 @@ export let pixelRatio = PixelRatio.get();
 export const DEFAULT_DENSITY = 2;
 //px转换成dp
 //以iphone6为基准,如果以其他尺寸为基准的话,请修改下面的defaultWidth和defaultHeight为对应尺寸即可. 以下为1倍图时
-const defaultWidth = 375;
+const defaultWidth = 375;  // 宽度除以像素密度2，等于dp为单位的宽度
 const defaultHeight = 667;
 const w2 = defaultWidth / DEFAULT_DENSITY;
 //px转换成dp

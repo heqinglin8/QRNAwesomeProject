@@ -27,7 +27,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <QText style={ {fontSize:30} }> 徐爽 hello</QText>
+      {/* <QText style={ {fontSize:30} }> 徐爽 hello</QText>
         <TouchableOpacity onPress={this.onSelectCertificate.bind(this)}>
         <Text style={styles.welcome} >点击关闭键盘</Text>
         <Text style={styles.welcome} >welcome to</Text>
@@ -39,18 +39,22 @@ export default class App extends Component {
         ref={this._setTextRef}
         >To get started, edit App.js</Text>
         </TouchableOpacity>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.instructions}>{instructions}</Text> */}
 
         <Text style={{fontSize: 30}}>没适配,本机像素：{PixelRatio.get()}</Text>
                 <Text style={{fontSize: ScreenUtil.setSpText(30)}}>已适配</Text>
                 <View style={{
                     height: 50, width: 240, backgroundColor: 'green'
-                }}></View>
+                }}>
+               <Text style={{fontSize: ScreenUtil.setSpText(30)}}>没有适配的view</Text> 
+                </View>
                 <View style={{
-                    height: ScreenUtil.scaleSize(50),
+                    height: ScreenUtil.scaleHeight(50),
                     width: ScreenUtil.scaleSize(240),
                     backgroundColor: 'red'
-                }}></View>
+                }}>
+               <Text style={{fontSize: ScreenUtil.setSpText(30)}}>适配后的view</Text>
+              </View>
 
            {/* <TextInput
               style={[styles.input]}
